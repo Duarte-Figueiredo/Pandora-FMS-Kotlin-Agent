@@ -1,7 +1,6 @@
 package com.duartefigueiredo.pandorafmsagent
 
 object ModuleConst {
-
     const val MODULE = "module"
     const val MODULE_NAME = "name"
     const val MODULE_DESCRIPTION = "description"
