@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<agent_data description='' group='' os_name='android' os_version='6.0.1' interval='300' version='4.0(Build 111012)'
+            timestamp='2018/02/25 22:50:24' agent_name='pandroid' timezone_offset='0'>
+    <module>
+        <name><![CDATA[battery_level]]></name>
+        <description><![CDATA[The current Battery level]]></description>
+        <type><![CDATA[generic_data]]></type>
+        <data><![CDATA[100]]></data>
+    </module>
+    <module>
+        <name><![CDATA[freeRamMemory]]></name>
+        <description><![CDATA[The percentage of available ram.]]></description>
+        <type><![CDATA[generic_data]]></type>
+        <data><![CDATA[68.63]]></data>
+    </module>
+    <module>
+        <name><![CDATA[upTime]]></name>
+        <description><![CDATA[Total device uptime in seconds.]]></description>
+        <type><![CDATA[generic_data]]></type>
+        <data><![CDATA[5013]]></data>
+    </module>
+    <module>
+        <name><![CDATA[helloSignal]]></name>
+        <description><![CDATA[Hello Signal]]></description>
+        <type><![CDATA[generic_data]]></type>
+        <data><![CDATA[2]]></data>
+    </module>
+    <module>
+        <name><![CDATA[receiveBytes]]></name>
+        <description><![CDATA[Bytes received]]></description>
+        <type><![CDATA[generic_data]]></type>
+        <data><![CDATA[8575812]]></data>
+    </module>
+    <module>
+        <name><![CDATA[transmitBytes]]></name>
+        <description><![CDATA[Bytes transmitted]]></description>
+        <type><![CDATA[generic_data]]></type>
+        <data><![CDATA[14962939]]></data>
+    </module>
+</agent_data>
