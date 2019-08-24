@@ -1,4 +1,4 @@
-package com.duartefigueiredo.pandorafmsagent
+package com.duartefigueiredo.pandorafmsagent.module
 
 public enum class ModuleState {
     NORMAL,

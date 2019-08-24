@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agent_data interval="300" timezone_offset="0">
+	<module>
+		<name>
+			<![CDATA[module1]]>
+		</name>
+		<description>
+			<![CDATA[description1]]>
+		</description>
+		<type>
+			<![CDATA[generic_data]]>
+		</type>
+	</module>
+	<module>
+		<name>
+			<![CDATA[module2]]>
+		</name>
+		<description>
+			<![CDATA[description2]]>
+		</description>
+		<type>
+			<![CDATA[generic_data]]>
+		</type>
+	</module>
+	<module>
+		<name>
+			<![CDATA[module3]]>
+		</name>
+		<description>
+			<![CDATA[description3]]>
+		</description>
+		<type>
+			<![CDATA[generic_data]]>
+		</type>
+	</module>
+</agent_data>

@@ -1,4 +1,4 @@
-package com.duartefigueiredo.pandorafmsagent
+package com.duartefigueiredo.pandorafmsagent.module
 
 enum class ModuleType {
     ASYNC_DATA,

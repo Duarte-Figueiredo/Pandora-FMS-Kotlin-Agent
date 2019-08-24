@@ -1,4 +1,4 @@
-package com.duartefigueiredo.pandorafmsagent
+package com.duartefigueiredo.pandorafmsagent.module
 
 object ModuleConst {
     const val MODULE = "module"

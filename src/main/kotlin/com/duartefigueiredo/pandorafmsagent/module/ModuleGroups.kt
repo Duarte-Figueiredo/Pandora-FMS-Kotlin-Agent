@@ -1,4 +1,4 @@
-package com.duartefigueiredo.pandorafmsagent
+package com.duartefigueiredo.pandorafmsagent.module
 
 public object ModuleGroups {
     public const val APPLICATION = "application"

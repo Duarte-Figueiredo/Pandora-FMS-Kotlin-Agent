@@ -1,4 +1,4 @@
-package com.duartefigueiredo.pandorafmsagent
+package com.duartefigueiredo.pandorafmsagent.module
 
 public object ModuleTags {
     public const val CRITICAL = "CRITICAL"

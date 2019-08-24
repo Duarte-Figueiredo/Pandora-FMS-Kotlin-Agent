@@ -1,6 +1,0 @@
-<module>
-    <name><![CDATA[battery_level]]></name>
-    <description><![CDATA[The current Battery level]]></description>
-    <type><![CDATA[generic_data]]></type>
-    <data><![CDATA[100]]></data>
-</module>
