@@ -13,6 +13,8 @@ import com.duartefigueiredo.pandorafmsagent.agent.AgentConst.AGENT_TIMEZONE_OFFS
 import com.duartefigueiredo.pandorafmsagent.agent.AgentConst.AGENT_VERSION
 import org.redundent.kotlin.xml.Node
 import org.redundent.kotlin.xml.xml
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
 
 private const val EMPTY_STRING = ""
 
@@ -25,6 +27,7 @@ data class Agent(
 
     val interval: Int = 300,
     val timezoneOffset: String = "0",
+    val timeStamp: String = getSampleTime(),
 
     val osName: String = EMPTY_STRING,
     val osVersion: String = EMPTY_STRING,
@@ -34,6 +37,11 @@ data class Agent(
 
 ) : NodeCompatible() {
 
+    companion object { //2018/02/25 22:50:24
+        private fun getSampleTime() = LocalDateTime
+            .now().format(DateTimeFormatter.ofPattern("YYYY/MM/dd HH:mm:ss"))
+    }
+
     override fun toNode() = xml(AGENT_DATA) {
         this.addAttributeIfNotBlank(AGENT_DESCRIPTION, agentDescription)
         this.addAttributeIfNotBlank(AGENT_GROUP, agentGroup)
@@ -41,7 +49,7 @@ data class Agent(
         this.addAttributeIfNotBlank(AGENT_OS_VERSION, osVersion)
         this.addAttributeIfNotBlank(AGENT_INTERVAL, "$interval")
         this.addAttributeIfNotBlank(AGENT_VERSION, appVersion)
-        this.addAttributeIfNotBlank(AGENT_TIMESTAMP, "")
+        this.addAttributeIfNotBlank(AGENT_TIMESTAMP, timeStamp)
         this.addAttributeIfNotBlank(AGENT_NAME, appName)
         this.addAttributeIfNotBlank(AGENT_TIMEZONE_OFFSET, timezoneOffset)
     }
