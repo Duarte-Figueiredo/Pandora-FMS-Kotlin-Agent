@@ -17,6 +17,16 @@ public class ReportBuilder(private val agent: Agent) {
             singleLineTextElements = false,
             useSelfClosingTags = true
         )
+
+        private fun customFieldsNode(customFields: List<CustomFields>): Node {
+            val customFieldsNode = Node("custom_fields")
+
+            customFields.map { it.node }.forEach { customField ->
+                customFieldsNode.addNode(customField)
+            }
+
+            return customFieldsNode
+        }
     }
 
     private val modules = mutableListOf<Module>()
@@ -35,13 +45,11 @@ public class ReportBuilder(private val agent: Agent) {
         agentNode.includeXmlProlog = true
 
         agentNode.let {
-            modules.map { it.node }.forEach { module ->
-                it.addNode(module)
+            modules.map { module -> module.node }.forEach { moduleNode ->
+                it.addNode(moduleNode)
             }
 
-            customFields.map { it.node }.forEach { customField ->
-                it.addNode(customField)
-            }
+            it.addNode(customFieldsNode(customFields))
         }
 
         return agentNode
